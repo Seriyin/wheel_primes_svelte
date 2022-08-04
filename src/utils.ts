@@ -8,4 +8,15 @@ export function chunked<T>(arr: T[], size: number): T[][]  {
         };
         return acc;
     }, []);
- };
+};
+
+export function chunk_from_bool(arr: boolean[], size: number): number[][] {
+    let res: number[] = arr.reduce<number[]>((acc, val, ind) => {
+        if(val) {
+            acc.push(ind);
+        }
+
+        return acc;
+    }, []);
+    return chunked(res, size)
+}
