@@ -1,5 +1,5 @@
 import App from './App.svelte';
-import wasm from '../../wheel_primes_rust/Cargo.toml';
+import wasm from '../../prime-sieves_rust_wasm/prime-sieves/Cargo.toml';
 import "carbon-components-svelte/css/g80.css";
 
 const init = async () => {

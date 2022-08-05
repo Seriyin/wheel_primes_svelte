@@ -115,10 +115,6 @@
 </Content>
 
 <style>
-	:root {
-		height: auto;
-	}
-
 	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
